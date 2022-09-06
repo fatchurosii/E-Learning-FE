@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
+import Link from 'next/link'
+
 
 const Home: NextPage = () => {
   return (
@@ -14,45 +16,44 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main className='antialiased'>
+        <section className='pt-24 m lg:pt-28 md:pt-20 lg:pb-36 ' id='Home'>
+          <div className='container mx-auto'>
+            <div className='lg:flex'>
+              <div className='self-center px-4 lg:px-0 lg:w-6/12'>
+                <h1 className="text-3xl font-semibold text-primary lg:text-4xl">
+                  Bimbel Bahasa Inggris untuk anak - anak dengan Mentor yang berpengalaman
+                </h1>
+                <h2 className="py-5 mb-5 text-sm font-medium text-gray-400 lg:text-lg">
+                  Dengan bergabung dengan Naladhipa Courses anak anda akan merasakan pengalaman yang seru saat
+                  belajar bahasa inggris
+                </h2>
+                <div className='items-center justify-between'>
+                  <ul className='flex flex-row py-10 space-x-5 lg:md:space-x-10'>
+                    <li>
+                      <Link href=""><a className='px-10 py-3 text-xl font-semibold text-white rounded-lg shadow-sm hover:bg-purple-600 focus:ring-purple-200 focus:ring bg-primary' >
+                        Yuk Gabung
+                      </a>
+                      </Link>
+                    </li>
+                    <li className='-mt-3 text-xl font-semibold text-dark'>
+                      <span className="px-3">10+</span>
+                      <br />
+                      <span>Siswa</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className='self-end w-6/12 px-4 lg:py-0'>
+                <div className='relative hidden lg:block'>
+                  <Image src="/Hero.png" className='hidden lg:block' alt='hero' width={712}
+                    height={500}></Image>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>

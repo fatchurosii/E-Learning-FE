@@ -9,7 +9,7 @@ export default function Navbar() {
                 <nav className="fixed z-20 w-full bg-white shadow-sm">
                     <div className="w-full">
                         <div className="container flex items-center w-full h-20 mx-auto">
-                            <div className="flex items-center justify-between w-full px-4">
+                            <div className="flex items-center justify-between w-full px-4 lg:px-0">
                                 <div className="flex items-center justify-center flex-shrink-0">
                                     <h1 className="text-lg font-semibold tracking-normal cursor-pointer lg:text-2xl text-primary">
                                         Naladhipa Courses
@@ -63,7 +63,7 @@ export default function Navbar() {
 
                     >
                         {(ref) => (
-                            <div className="md:hidden" id="mobile-menu">
+                            <div className="rounded-md shadow-sm md:hidden" id="mobile-menu">
                                 <div ref={ref} className="flex flex-col flex-wrap px-4 pt-4 pb-4 space-y-1 bg-white border-gray-400 ">
                                     <Link href="#Home"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Home</a></Link>
                                     <Link href="#About"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">About</a></Link>
