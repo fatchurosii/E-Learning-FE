@@ -1,8 +1,8 @@
 module.exports = {
   content: [
     "./node_modules/flowbite-react/**/*.js",
-    "./pages/**/*.{ts,tsx}",
-    "./public/**/*.html",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   plugins: [
     require("flowbite/plugin")
