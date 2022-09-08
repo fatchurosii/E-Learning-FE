@@ -176,6 +176,99 @@ const Home: NextPage = () => {
           </div>
         </section>
         {/* End Mentor Section */}
+        {/* Paket Section */}
+        <section className="py-10 bg-secondary lg:py-20" id="price" >
+          <div className="container mx-auto">
+            <div className="px-4 text-left lg:px-0">
+              <h1 className="pb-2 text-xl font-semibold lg:text-3xl text-primary">
+                Pilihan Paket
+              </h1>
+            </div>
+            <div className="flex-wrap justify-center px-3 py-5 lg:py-20 lg:flex gap-y-10">
+              <div className="pb-10 lg:w-4/12 md:w-6/12">
+                <div className="max-w-sm p-6 bg-white rounded-lg shadow-lg">
+                  <div className="items-center">
+                    <h1 className="pb-2 text-3xl font-semibold uppercase text-primary">Offline Class</h1>
+                    <h2 className="pb-5 text-base font-normal text-gray-400">Benefit kelas</h2>
+                  </div>
+                  <ul className="grid grid-cols-1 text-sm gap-y-2 lg:gap-y-4 lg:text-base" role="list">
+                    <li className="flex items-center text-dark"><svg className="w-6 h-6 mr-4 text-primary"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>Belajar secara Offline</li>
+                    <li className="flex items-center"><svg className="w-6 h-6 mr-4 text-primary" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>Konsultasi belajar</li>
+                    <li className="flex items-center"><svg className="w-6 h-6 mr-4 text-primary" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>Akses kelas online</li>
+                    <li className="flex items-center"><svg className="w-6 h-6 mr-4 text-primary" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>4 x Pertemuan / bulan</li>
+                  </ul>
+
+                  <hr className="mt-4 mb-4" />
+                  <h1 className="text-2xl font-medium text-center text-dark"> 100 ribu / Bulan</h1>
+                  <div className="flex justify-center mt-5">
+                    <a href="https://api.whatsapp.com/send?phone=081703876554&text=Halo%20saya%20ingin%20mendaftar%20paket%20kelas%20offline"
+                      className="w-full py-3 font-semibold text-center text-white rounded-xl bg-primary fade hover:bg-purple-700 hover:text-white">
+                      Daftar Sekarang</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pb-5 lg:w-4/12 md:w-6/12">
+                <div className="max-w-sm p-6 bg-white rounded-lg shadow-lg">
+                  <div className="items-center">
+                    <h1 className="pb-2 text-3xl font-semibold uppercase text-primary">Online Class</h1>
+                    <h2 className="pb-5 text-base font-normal text-gray-400">Benefit kelas</h2>
+                  </div>
+                  <ul className="grid grid-cols-1 text-sm gap-y-2 lg:gap-y-4 lg:text-base" role="list">
+                    <li className="flex items-center text-dark"><svg className="w-6 h-6 mr-4 text-primary"
+                      fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>Belajar secara Online (video call)</li>
+                    <li className="flex items-center"><svg className="w-6 h-6 mr-4 text-primary" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>Konsultasi belajar</li>
+                    <li className="flex items-center"><svg className="w-6 h-6 mr-4 text-primary" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>Akses kelas online</li>
+                    <li className="flex items-center"><svg className="w-6 h-6 mr-4 text-primary" fill="none"
+                      stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>8 x Pertemuan / bulan</li>
+                  </ul>
+
+                  <hr className="mt-4 mb-4" />
+                  <h1 className="text-2xl font-medium text-center text-dark"> 150 ribu / Bulan</h1>
+                  <div className="flex justify-center mt-5">
+                    <a href="https://api.whatsapp.com/send?phone=081703876554&text=Halo%20saya%20ingin%20mendaftar%20paket%20kelas%20online"
+                      className="w-full py-3 font-semibold text-center text-white rounded-xl bg-primary fade hover:bg-purple-700 hover:text-white">
+                      Daftar Sekarang</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* End Paket Section */}
       </main>
 
       <footer className={styles.footer}>
