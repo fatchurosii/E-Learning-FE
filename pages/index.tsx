@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import Link from 'next/link'
 
 
+
 const Home: NextPage = () => {
   return (
     <>
@@ -146,6 +147,35 @@ const Home: NextPage = () => {
           </div>
         </section>
         {/* End Feature Section */}
+
+        {/* Mentor Section */}
+        <section id="about" className="py-10 bg-white lg:py-20 ">
+          <div className="container mx-auto">
+            <div className="px-4 text-left lg:px-0">
+              <h1 className="pb-2 text-xl font-medium lg:text-3xl text-primary">
+                Kenalan yuk sama Mentor di
+              </h1>
+              <h1 className="text-3xl font-semibold lg:text-4xl text-primary">
+                Naladhipa Course
+              </h1>
+            </div>
+            <div className="flex-wrap px-3 py-5 lg:px-0 lg:py-10 lg:flex gap-y-10 ">
+              <div className="items-center self-center pb-10 lg:w-6/12">
+                <Image src="/Mentor.png" className="max-w-xs lg:max-w-lg" alt="mentor" height={400} width={500} />
+              </div>
+              <div className="items-center self-center lg:w-6/12">
+                <h1 className="pb-2 text-4xl font-semibold">Mentor Albert</h1>
+                <h1 className=" text-dark lg:text-2xl">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the industry  standard dummy text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining essentially unchanged
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* End Mentor Section */}
       </main>
 
       <footer className={styles.footer}>
