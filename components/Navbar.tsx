@@ -17,11 +17,11 @@ export default function Navbar() {
                                 </div>
                                 <div className="hidden md:block">
                                     <div className="flex items-baseline ml-10 space-x-4">
-                                        <Link href="#Home"><a className="px-3 py-2 text-base font-medium cursor-pointer text-primary ">Home</a></Link>
-                                        <Link href="#About"><a className="px-3 py-2 text-base cursor-pointer hover:text-purple-600">About</a></Link>
-                                        <Link href="#Testimonials"><a className="px-3 py-2 text-base cursor-pointer hover:text-purple-600">Testimonials</a></Link>
-                                        <Link href="#Price"><a className="px-3 py-2 text-base cursor-pointer hover:text-purple-600">Harga</a></Link>
-                                        <Link href="#Contact"><a className="px-3 py-2 text-base cursor-pointer hover:text-purple-600">Contact</a></Link>
+                                        <Link href="#home"><a className="px-3 py-2 text-base font-medium cursor-pointer text-primary ">Home</a></Link>
+                                        <Link href="#about"><a className="px-3 py-2 text-base cursor-pointer hover:text-purple-600">About</a></Link>
+                                        <Link href="#testimonials"><a className="px-3 py-2 text-base cursor-pointer hover:text-purple-600">Testimonials</a></Link>
+                                        <Link href="#price"><a className="px-3 py-2 text-base cursor-pointer hover:text-purple-600">Harga</a></Link>
+                                        <Link href="#contact"><a className="px-3 py-2 text-base cursor-pointer hover:text-purple-600">Contact</a></Link>
                                     </div>
                                 </div>
                                 <div className="items-center justify-center flex-shrink-0 hidden lg:block">
@@ -65,11 +65,11 @@ export default function Navbar() {
                         {(ref) => (
                             <div className="rounded-md shadow-sm md:hidden" id="mobile-menu">
                                 <div ref={ref} className="flex flex-col flex-wrap px-4 pt-4 pb-4 space-y-1 bg-white border-gray-400 ">
-                                    <Link href="#Home"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Home</a></Link>
-                                    <Link href="#About"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">About</a></Link>
-                                    <Link href="#Testimonials"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Testimonials</a></Link>
-                                    <Link href="#Price"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Harga</a></Link>
-                                    <Link href="#Contact"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Contact</a></Link>
+                                    <Link href="#home"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Home</a></Link>
+                                    <Link href="#about"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">About</a></Link>
+                                    <Link href="#testimonials"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Testimonials</a></Link>
+                                    <Link href="#price"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Harga</a></Link>
+                                    <Link href="#contact"><a className="px-3 py-2 text-base font-medium rounded-md cursor-pointer text-dark hover:bg-primary hover:text-white">Contact</a></Link>
                                 </div>
                             </div>
                         )}

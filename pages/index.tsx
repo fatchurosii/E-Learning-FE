@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <main className='antialiased'>
 
         {/* Hero Section */}
-        <section className='pt-24 m lg:pt-28 md:pt-20 lg:pb-36 ' id='Home'>
+        <section className='pt-24 m lg:pt-28 md:pt-20 lg:pb-36 ' id='home'>
           <div className='container mx-auto'>
             <div className='lg:flex'>
               <div className='self-center px-4 lg:px-0 lg:w-6/12'>
