@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Link from 'next/link'
+import kontakPic from '../public/kontak.svg'
 
 
 
@@ -176,6 +176,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         {/* End Mentor Section */}
+
         {/* Paket Section */}
         <section className="py-10 bg-secondary lg:py-20" id="price" >
           <div className="container mx-auto">
@@ -267,21 +268,112 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-
         {/* End Paket Section */}
+
+        {/* Testimonials Section*/}
+        <section className="py-20 bg-white lg:py-36 " id="testimonials">
+          <div className="container mx-auto">
+            <div className="flex-wrap lg:flex ">
+              <div className="self-center px-4 pb-10 lg:px-0 lg:w-1/2 lg:pb-0 ">
+                <h1 className="pb-5 text-4xl font-medium text-gray-500">Sebuah cerita</h1>
+                <h1 className="text-3xl font-semibold lg:text-6xl text-primary ">Pengalaman saat belajar di Naladhipa
+                  Courses</h1>
+              </div>
+              <div className="self-end w-full mt-5 lg:w-1/2 lg:pl-40">
+                <div className="p-8 bg-white rounded-lg shadow-lg lg:max-w-md">
+                  <div className="items-center justify-between">
+                    <ul className="flex flex-row space-x-5">
+                      <li>
+                        <Image src="/testi.png" className="w-16 h-16" alt="time" width={70} height={70} />
+                      </li>
+                      <li className="mt-5">
+                        <h5 className="mb-2 text-2xl font-semibold tracking-normal text-dark ">
+                          Soleh Panjaitan</h5>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="pt-5 mb-3 text-xl font-normal text-gray-400">Saya sangat senang sekali
+                    belajar di Naladhipa Courses karena mentornya sangat ramah dan saya disana belajar dengan
+                    menyenangkan karena metode belajarnya sangat mengasyikkan.`</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* End Testimonials Section */}
+
+        {/* Contact Section */}
+        <section className="py-10 mb-20 bg-white lg:py-20" id="contact">
+          <div className="container mx-auto">
+            <div className="flex-wrap lg:flex">
+              <div className="self-center px-4 pb-5 lg:px-0 lg:w-1/2 ">
+                <h1 className="pb-5 text-2xl font-semibold lg:text-5xl text-primary">Tertarik untuk
+                  belajar ?</h1>
+                <h1 className="mb-10 text-base font-medium text-gray-400 lg:text-xl lg:mb-14">Silahkan segera hubungi
+                  kontak
+                  dibawah ini untuk konsultasi mengenai bimbingan belajar Naladhipa Courses</h1>
+                <a href="https://api.whatsapp.com/send?phone=081703876554"
+                  className="px-2 py-3 font-semibold text-white rounded-md lg:py-4 bg-primary lg:px-10"><i
+                    className="fa-brands fa-whatsapp"></i>Silahkan
+                  Hubungi
+                  Via Whatsapp</a>
+              </div>
+
+              <div className="relative self-end w-full mt-10 lg:w-1/2 lg:pl-20 ">
+                <Image src={kontakPic} alt="kontak" />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* End Contact Section */}
+
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer className="w-full py-10 bg-footer-dark " id="footer">
+        <div className="container mx-auto">
+          <div className="flex-wrap justify-between lg:flex">
+            <div className="self-start py-3 pr-32 lg:w-4/12">
+              <h1 className="mb-3 text-2xl font-semibold text-white lg:text-4xl">Naladhipa Courses</h1>
+              <p className="text-base text-white lg:text-lg font-regular">Merupakan bimbel bahasa inggris yang
+                menghadirkan konsep
+                fun learning dalam pembelajarannya</p>
+            </div>
+            <div className="py-3 lg:w-2/12">
+              <h1 className="mb-2 text-2xl font-semibold text-white lg:text-4xl">Follow us
+              </h1>
+              <ul className="flex flex-col flex-wrap space-y-1">
+                <li>
+                  <a href="" className="text-lg text-white">Instagram</a>
+                </li>
+                <li>
+                  <a href="" className="text-lg text-white">Facebook</a>
+                </li>
+              </ul>
+            </div>
+            <div className="py-3 lg:w-2/12">
+              <h1 className="mb-2 text-2xl font-semibold text-white lg:text-4xl">Kelas
+              </h1>
+              <ul className="flex flex-col flex-wrap space-y-1">
+                <li>
+                  <Link href="#price">
+                    <a className="text-lg text-white">Offline Class</a>
+                  </Link>
+                </li>
+                <li>
+                  <a href="" className="text-lg text-white">Online Class</a>
+                </li>
+              </ul>
+            </div>
+            <div className="py-3 lg:w-3/12">
+              <h1 className="mb-2 text-2xl font-semibold text-white lg:text-4xl">Alamat</h1>
+              <p className="text-lg text-white text-semibold lg:text-2xl">Kendondong Kidul 1 / 26 D, Surabaya Jawa
+                Timur, Indonesia
+              </p>
+              <p className="text-lg font-medium text-white">081703876554</p>
+            </div>
+          </div>
+        </div>
+
       </footer>
     </>
   )
